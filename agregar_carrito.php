@@ -3,7 +3,7 @@ session_start();
 include("conexion.php");
 
 if (!isset($_SESSION['idUsuario'])) {
-    echo "No logueado";
+    echo "Producto agregado al carrito";
     exit;
 }
 
@@ -21,4 +21,3 @@ if ($conexion->query($sql) === TRUE) {
 
 $conexion->close();
 ?>
-<!-- todo: conexion con base de datos -->
