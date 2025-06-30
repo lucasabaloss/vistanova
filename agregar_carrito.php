@@ -2,10 +2,10 @@
 session_start();
 include("conexion.php");
 
-if (!isset($_SESSION['idUsuario'])) {
-    echo "Producto agregado al carrito";
-    exit;
-}
+//if (!isset($_SESSION['idUsuario'])) {
+  //  echo "Producto agregado al carrito";
+    //xit;
+//}
 
 $idUsuario = $_SESSION['idUsuario'];
 $id_carrito = $_POST['id_carrito'];
