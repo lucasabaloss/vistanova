@@ -176,7 +176,7 @@ botonesAgregar.forEach(boton => {
       },
       body: `producto=${encodeURIComponent(titulo)}&precio=${precio}`
     })
-    .then(res => res.text())
-    .then(data => alert(data));
+    //.then(res => res.text())
+    //.then(data => alert(data));
   });
 });
