@@ -16,7 +16,7 @@ botonesAgregar.forEach(boton => {
     const item = { nombre, precio };
     carrito.push(item);
     localStorage.setItem("carrito", JSON.stringify(carrito));
-    //alert(`${nombre} agregado al carrito`);
+    alert(`${nombre} agregado al carrito`);
   });
 });
 
