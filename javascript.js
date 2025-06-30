@@ -162,21 +162,4 @@ botonesAgregar.forEach(boton => {
       });
     });
 
-    document.querySelectorAll('.boton-agregar').forEach(boton => {
-  boton.addEventListener('click', function () {
-    const card = this.closest('.destination-card');
-    const titulo = card.querySelector('h3').innerText;
-    const precioTexto = card.querySelector('strong').innerText.replace('$', '').replace('.', '').replace(',', '.');
-    const precio = parseFloat(precioTexto);
-
-    fetch('agregar_carrito.php', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
-      },
-      body: `producto=${encodeURIComponent(titulo)}&precio=${precio}`
-    })
-    //.then(res => res.text())
-    //.then(data => alert(data));
-  });
-});
+ 
